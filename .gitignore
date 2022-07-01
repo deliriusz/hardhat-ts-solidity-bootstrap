@@ -6,3 +6,5 @@ node_modules
 # .env files, only dev is allowed
 .env.*
 !.env.dev
+
+package-lock.json

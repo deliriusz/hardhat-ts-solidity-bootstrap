@@ -1,6 +1,7 @@
 import '@nomiclabs/hardhat-waffle'
 import '@typechain/hardhat'
 import '@nomiclabs/hardhat-ethers'
+import '@nomiclabs/hardhat-etherscan'
 import 'dotenv/config'
 
 import { HardhatUserConfig, task } from 'hardhat/config'
@@ -30,6 +31,9 @@ const config: HardhatUserConfig = {
   },
   mocha: {
     timeout: 100000000000
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY
   },
   defaultNetwork: "hardhat",
   networks: {
